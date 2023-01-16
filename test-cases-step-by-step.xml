@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>LIS</projectKey>
+    <exportDate>2023-01-16 02:09:22 UTC</exportDate>
+    <folders>
+        <folder fullPath="Backend" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="77695455" key="LIS-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rogério Aguilera</createdBy>
+            <createdOn>2023-01-05 03:37:43 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Backend]]></folder>
+            <issues>
+                <issue>
+                    <key>LIS-1</key>
+                    <summary><![CDATA[Cadastro via API]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[Manual]]></label>
+            </labels>
+            <name><![CDATA[Alteração de  cadastro de usuário com sucesso]]></name>
+            <objective><![CDATA[Alterar cadastros de usu&aacute;rios j&aacute; vinculados ao sistema]]></objective>
+            <owner>63948df5a593cb822e998ee4</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Realizar autentica&ccedil;&atilde;o:&nbsp;<pre>https://saucedemo.com/api/v1/auth</pre>]]></description>
+                        <expectedResult><![CDATA[Deve retorna status code 201 com token gerado]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Acessar rota PUT utilizando token gerado anteriormente -&nbsp;<pre>https://saucedemo.com/api/v1/usuarios/{id}</pre>]]></description>
+                        <expectedResult><![CDATA[Deve retornar status code 200 com altera&ccedil;&atilde;o gerada.]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="77695567" key="LIS-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rogério Aguilera</createdBy>
+            <createdOn>2023-01-05 03:40:05 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Backend]]></folder>
+            <issues>
+                <issue>
+                    <key>LIS-1</key>
+                    <summary><![CDATA[Cadastro via API]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[Manual]]></label>
+            </labels>
+            <name><![CDATA[Exclusão de cadastro]]></name>
+            <objective><![CDATA[Remover cadastro com sucesso]]></objective>
+            <owner>63948df5a593cb822e998ee4</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Realizar autentica&ccedil;&atilde;o:&nbsp;<pre>https://saucedemo.com/api/v1/auth</pre>]]></description>
+                        <expectedResult><![CDATA[Deve retorna status code 201 com token gerado]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Acessar rota Delete utilizando token gerado anteriormente -&nbsp;<pre>https://saucedemo.com/api/v1/cadastro/{id}</pre>]]></description>
+                        <expectedResult><![CDATA[Deve retornar status code 200 - com id gerado de cadastro.]]></expectedResult>
+                        <testData><![CDATA[{]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
